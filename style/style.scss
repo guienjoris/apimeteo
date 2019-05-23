@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    width:100%;
+    background-image: url("../media/ciel\ dégagé.jpg");
+}
+fieldset{
+    width:20vw;
+    margin-left:50%;
+    transform:translate(-50%);
+}
+button{
+    margin-bottom:3vh;
+}
+fieldset{
+    background-color: rgba(255,255,255,0.5);
+}
+#weather{
+    display:flex;
+    margin-left:50%;
+    transform:translate(-50%);
+    justify-content: center;
+    border:1px solid black;
+    width:100%;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow:3px 3px 30px black;
+    margin-bottom:2vh;
+    div{
+        padding:0;
+        margin:0 3%;
+    }
+    img{
+        width:5vw;
+    }
+    a{
+        font-weight:bold;
+        color:rgb(0, 153, 153);
+        text-decoration:none;
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+   
+}
+h1,p,h2,input,fieldset,a{
+    font-family: 'Poppins', sans-serif;
+    font-size:1.5vw;
+}
+p{
+    font-size:1.5vw;
+}
+legend{
+    text-shadow:1px 1px 3px white;
+}
+
+#container_news{
+    width:70%;
+    margin:10vh;
+    margin-left:50%;
+    transform:translate(-50%);
+    justify-content:center;
+
+}

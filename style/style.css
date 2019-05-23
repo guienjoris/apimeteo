@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  background-image: url("../media/ciel dégagé.jpg");
+}
+
+fieldset {
+  width: 20vw;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+button {
+  margin-bottom: 3vh;
+}
+
+fieldset {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 3px 3px 30px black;
+          box-shadow: 3px 3px 30px black;
+  margin-bottom: 2vh;
+}
+
+#weather div {
+  padding: 0;
+  margin: 0 3%;
+}
+
+#weather img {
+  width: 5vw;
+}
+
+#weather a {
+  font-weight: bold;
+  color: #009999;
+  text-decoration: none;
+}
+
+#weather a:hover {
+  text-decoration: underline;
+}
+
+h1, p, h2, input, fieldset, a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+legend {
+  text-shadow: 1px 1px 3px white;
+}
+
+#container_news {
+  width: 70%;
+  margin: 10vh;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

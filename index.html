@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meteo</title>
+    <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+<img id=background src="">
+    <fieldset>
+        <legend>Ville</legend>
+        <input id="cityName" type="text" value="Paris">
+    </fieldset>
+    <button onclick="requete()">Envoyer</button>
+
+<div id="weather">
+    <div>
+    <h1>Temperature</h1>
+    <p id="temperature"></p>
+    </div>
+    <div>
+    <h1>Humidité</h1>
+    <p id="humidity"></p>
+    </div>
+    <div>
+    <h1>Lieu</h1>
+    <p id="lieu"></p>
+    </div>
+    <div>
+    <h1>Temps</h1>
+    <p id="climat"></p>
+    <img id="icon" src="">
+    
+    </div>
+    <div>
+    <h1>Heure</h1>
+    <p id="hour"></p>
+</div>
+
+    
+
+</div>
+<div id="container_news">
+    <h1>News</h1>
+        <p class="news_title"></p>
+        <p class="news_description"></p>
+        <p class="news_title2"></p>
+        <p class="news_description2"></p>
+        <p class="news_title3"></p>
+        <p class="news_description3"></p>
+       
+    </div>
+    <script src="script/meteo.js"></script>
+
+</body>
+</html>
