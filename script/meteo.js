@@ -18,7 +18,7 @@ var news_descr3= document.querySelector(".news_description3");
 
     
 // API weather
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=4bf558d6703a571b73fb51bc44fa5f70&units=metric&lang=fr`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=Paris,FR&appid=4bf558d6703a571b73fb51bc44fa5f70&units=metric&lang=fr`)
 .then(res => res.json())
 .then(data => {
     temperature.textContent=Math.floor(data.main.temp) +"°C";
@@ -46,10 +46,10 @@ fetch(`https://newsapi.org/v2/everything?q=Paris&from=2019-04-23&sortBy=publishe
 
 function requete(){
     var cityName=document.getElementById("cityName").value;
-    
-    console.log(cityName); 
+    var cityCountry= document.getElementById("cityCountry").value;
+    console.log(cityName,cityCountry); 
     // API weather
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=4bf558d6703a571b73fb51bc44fa5f70&units=metric&lang=fr`) 
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName},${cityCountry}&appid=4bf558d6703a571b73fb51bc44fa5f70&units=metric&lang=fr`) 
         .then(res => res.json())
         .then(data => {
             console.log(data);
