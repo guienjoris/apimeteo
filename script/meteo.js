@@ -23,13 +23,13 @@ fetch(`http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=4bf558d6703a
 .then(data => {
     temperature.textContent=Math.floor(data.main.temp) +"°C";
     humidity.textContent=data.main.humidity +"%";
-    lieu.innerHTML=`<a href='https://fr.wikipedia.org/wiki/${data.name}' target="_blank"> ${data.name} </a>`;
+    lieu.innerHTML=`<a href='http://fr.wikipedia.org/wiki/${data.name}' target="_blank"> ${data.name} </a>`;
     climat.textContent= data.weather[0].description;
     icon.textContent= icon.setAttribute('src', "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
     hour.textContent= Math.floor((date.getHours()-2+data.timezone/60/60)) + ":" +date.getMinutes() +":" + date.getSeconds(); 
 });  
 // API News
-fetch(`https://newsapi.org/v2/everything?q=Paris&from=2019-04-23&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
+fetch(`http://newsapi.org/v2/everything?q=Paris&from=2019-04-23&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
 .then(res => res.json())
 .then(dataNews =>{
     console.log(dataNews);
@@ -55,7 +55,7 @@ function requete(){
             console.log(data);
             temperature.textContent=Math.floor(data.main.temp)+"°C";
             humidity.textContent=data.main.humidity+"%";
-            lieu.innerHTML=`<a href='https://fr.wikipedia.org/wiki/${data.name}' target="_blank"> ${data.name} </a>`;
+            lieu.innerHTML=`<a href='http://fr.wikipedia.org/wiki/${data.name}' target="_blank"> ${data.name} </a>`;
             climat.textContent= data.weather[0].description;
             icon.textContent= icon.setAttribute('src', "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png");
             hour.textContent= Math.floor((date.getHours()-2+data.timezone/60/60)) + ":" +date.getMinutes() +":" + date.getSeconds();  
@@ -63,7 +63,7 @@ function requete(){
     // API News
   
         
-        fetch(`https://newsapi.org/v2/everything?q=${cityName}&from=2019-04-23&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
+        fetch(`http://newsapi.org/v2/everything?q=${cityName}&from=2019-04-23&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
         .then(res => res.json())
         .then(dataNews =>{
             console.log(dataNews);
