@@ -29,7 +29,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=Paris,FR&appid=4bf558d6
     hour.textContent= Math.floor((date.getHours()-2+data.timezone/60/60)) + ":" +date.getMinutes() +":" + date.getSeconds(); 
 });  
 // API News
-fetch(`https://newsapi.org/v2/everything?q=Paris&from=2019-04-23&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
+fetch(`https://newsapi.org/v2/everything?q=Paris&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
 .then(res => res.json())
 .then(dataNews =>{
     console.log(dataNews);
