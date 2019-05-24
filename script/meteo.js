@@ -63,7 +63,7 @@ function requete(){
     // API News
   
         
-        fetch(`https://newsapi.org/v2/everything?q=${cityName}&from=2019-04-23&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
+        fetch(`https://newsapi.org/v2/everything?q=${cityName}&sortBy=publishedAt&apiKey=5061607fa5594ccbb70f9b710b680cc9`)
         .then(res => res.json())
         .then(dataNews =>{
             console.log(dataNews);
